@@ -9,7 +9,7 @@ Problem #1: Edge List representation
 ● void print_adjaceny_matrix(GRAPH &graph) 
 ● Read the edges into the data structure. Print them ordered based on cost 
 '''
-class Edge :
+class edge :
 
     def __init__(self, _fromm:int, _to:int, _weight:int) :
         self.fromm = _fromm
@@ -23,11 +23,11 @@ class Edge :
         print(f"Edge ({self.fromm} {self.to} {self.weight})")
        
 def add_edge(graph:list, fromm:int, to:int, cost:int) :
-    graph.append(Edge(fromm, to, cost))
+    graph.append(edge(fromm, to, cost))
 
 def print_adjacency_list(graph:list) :
     for edge in graph : # for 'edge', so edge denoting the first element {0,1,10} and called the constructor and
-        edge.print()    # then edge became an object and called it's method print()
+        edge.print()    # then edge became an object and called it's method print(). We can also Edge(0,19).print()
 
 def Main() :
     graph = []

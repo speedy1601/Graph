@@ -40,8 +40,8 @@ void add_edge(GRAPH &graph, int from, int to, int cost)
 void print_adjacency_list(GRAPH &graph)
 {
     for(int edge = 0; edge<graph.size(); edge++)
-        graph[edge].print();
-}
+        graph[edge].print(); // withput explicitly creating object we can access member functions by the values.
+}                            // edge(0,1,8).print();
 
 int main()
 {
@@ -62,6 +62,7 @@ int main()
     sort(begin(graph), end(graph));
 
     print_adjacency_list(graph);
+
     return 0;
 }
 
