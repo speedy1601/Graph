@@ -32,7 +32,11 @@ def Main() :
 
 if __name__ == '__main__' :
     Main()
-
+'''
+for list of sets :
+    nodes, edges = map(int, input().split())
+    graph = [set() for _ in range(nodes)]
+'''
 '''
 Output :
 5
