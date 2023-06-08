@@ -55,3 +55,5 @@ def Main() :
 
 if __name__ == '__main__' :
     Main()
+
+''' Space Complexity is O(V^2 + All The Weights)'''

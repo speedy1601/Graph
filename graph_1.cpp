@@ -41,7 +41,7 @@ void print_adjacency_list(GRAPH &graph)
 {
     for(int edge = 0; edge<graph.size(); edge++)
         graph[edge].print(); // withput explicitly creating object we can access member functions by the values.
-}                            // edge(0,1,8).print();
+}                            // edge(0,1,8).print(); ALSO here every graph[edge] is an object of 'edge'.
 
 int main()
 {
