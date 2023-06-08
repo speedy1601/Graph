@@ -1,3 +1,4 @@
+```
 Consider during the Graph Sections
 ● The graphs you are given will always be valid 
     ○ Input vertices are always in the range [0, N-1]
@@ -12,3 +13,4 @@ Consider during the Graph Sections
     ○ Graph of a single node (maybe with a loop) 
     ○ Graph of N nodes and zero edges 
     ○ Graph that is: chain, tree, complete, dense, sparse
+```
