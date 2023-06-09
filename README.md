@@ -16,5 +16,5 @@ Consider during the Graph Sections
 ```
 
 ```
-graph_4 has IMPORTANT PYTHON SYNTAX : OrderedDict, SortedSet
+graph_4 has IMPORTANT PYTHON SYNTAX : SortedDict, SortedSet and explanation
 ```
