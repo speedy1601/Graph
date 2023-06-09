@@ -14,3 +14,7 @@ Consider during the Graph Sections
     ○ Graph of N nodes and zero edges 
     ○ Graph that is: chain, tree, complete, dense, sparse
 ```
+
+```
+graph_4 has IMPORTANT PYTHON SYNTAX : OrderedDict, SortedSet
+```
