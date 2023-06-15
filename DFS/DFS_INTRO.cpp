@@ -19,7 +19,7 @@ Input :
 
 Output :
 
-          Direct  Paths       
+        Direct  Paths       
 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 
 
 1 -> 2 -> 0 -> 3 -> 4 -> 5 -> 
@@ -32,7 +32,7 @@ Output :
                                         | 3 : [0, 4]. From 3 we can go 0 and 4. 3 is the parent/main node. We go to
 5 -> 0 -> 1 -> 2 -> 3 -> 4 ->           | the vector of graph[3] (0,4) and checked if 0 has visited, NO! so 3 -> 0 
                                         | we could also go by 3 -> 4 but we're taking only the first UNVISITED node
-          DFS  Reacable Nodes           | in straight_path() as WE INTEND TO PRINT A PATH/ROADMAP like from 3 to 2
+      DFS Reacable Nodes                | in straight_path() as WE INTEND TO PRINT A PATH/ROADMAP like from 3 to 2
 0 -> 1 -> 2 -> 3 -> 4 -> 5 ->           | we can go in this path : 3 -> 0 -> 1 -> 2 . As 2 : [0,3] we can't go from
                                         | 2 to any road/node.
 1 -> 2 -> 0 -> 3 -> 4 -> 5 ->           |  
@@ -135,8 +135,8 @@ int main()
         add_directed_edge(graph, from, to);
     }
     
-    cout << "          Direct  Paths" << endl;
+    cout << "        Direct  Paths" << endl;
     first_paths(graph);  
-    cout << "          DFS  Paths " << endl;
+    cout << "        DFS Reacable Nodes" << endl;
     reachability(graph);
 }
