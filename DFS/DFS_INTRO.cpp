@@ -140,3 +140,12 @@ int main()
     cout << "        DFS Reacable Nodes" << endl;
     reachability(graph);
 }
+
+/*
+We printed reachable-nodes in dfs for every node(i). We will find the TC and SC for a single node.
+Time  Complexity : O(nodes + edges) as at we visit every node and every edges at worst case.
+Space Complexity : O(nodes)
+
+For reachability() Space Complexity is O(nodes + local space for stack) i.e. for every node a bool vector, so nodes
+time bool vector created here + stack call included.
+*/
