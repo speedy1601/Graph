@@ -44,6 +44,8 @@ Output :
 4 -> 2 -> 0 -> 1 -> 5 -> 3 ->             understand this clearly (as there is 2 before 5) from the dfs cause DFS 
                                           PRINTS ONLY THE REACHABLE NODES, NOT PATH! 
 5 -> 0 -> 1 -> 2 -> 3 -> 4 ->        
+
+A somewhat details explanation added in notebook
 */
 
 #include<bits/stdc++.h>
