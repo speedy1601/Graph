@@ -7,8 +7,8 @@ Output :  [0,1,2,3,4,5,6,7,8,9,10,12,21]
 ```
 From the picture you can see for each digit we've only 2 option except for the number which last digit is 0 or 9.
 Everything is serially maintained here like for the first line 1 2 3 4 5 6 7 8 9, at first we processed 1 and made 2
-children 10, 12 with absolute diference 1, then we processed 2, 3...8, for 9, it is the highest single digit, so only
-98 possible not 100.
+children 10, 12 with absolute diference 1, then we processed 2, 3...8, for 9, it is the highest single digit, so 
+only 98 possible not 100.
 
 Now we have                       10, 12, 21, 23, 32, 34, 43, 45, 54, 56, 65, 67, 76, 78, 87, 89, 98
 All the 2 digits are finished, for 3 digit numbers, first we have 101, 102. 101 & 102 is children of 10. Then we
