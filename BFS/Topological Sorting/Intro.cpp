@@ -1,3 +1,5 @@
+// Topological Sort is used in a Directed Graph to detect cycle.
+// The given code based on leetcode 207 https://leetcode.com/problems/course-schedule/description/
 #include<bits/stdc++.h>
 using namespace std;
 
