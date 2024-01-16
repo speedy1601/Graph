@@ -1,4 +1,4 @@
-```js
+```py
 from heapq import heapify, heappush, heappop
 
 class Solution:
