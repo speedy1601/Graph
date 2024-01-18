@@ -1,4 +1,4 @@
 | Day | 9:30 - 10:50 | 11:00 - 12:20 | 1:00 - 2:20 | 2:30 - 3:50 | 4:00 - 5:20 |
 | :--| :--------| :--------| :-----| :-----| :--- |
-|SAT/MON | | 3226 (MA) | 4241 (VLSI) | 4278 (CGaMS) | 4279 `(VLSI LAB)` `(SAT)` |
-|SUN/TUES | | 4288 `(CGaMS Lab)` `(TUES)` | 3375 (CE) | 3292 (SD III) `(TUES)`
+|SAT/MON | | 3226 `(MA)` | 4241 `(VLSI)` | 4278 `(CGaMS)` | 4279 `(VLSI LAB)` `(SAT)` |
+|SUN/TUES | | 4288 `(CGaMS Lab)` `(TUES)` | 3375 `(CE)` | 3292 `(SD III)` `(TUES)` |
