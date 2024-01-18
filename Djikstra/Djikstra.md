@@ -207,7 +207,69 @@ if __name__ == '__main__':
     main()
 ```
 
+## Removing 'visited list/dictionary'
+
+- min heap : 
+```
+                            (2,2)
+                            (3,2)
+                            (5,3)
+```
+- Here after (2,2) popped from the heap, the cost of Adjacent Nodes of Node 2 got updated.
+- Next when (3,2) get popped we noticed Node 2 already processed and also the curCost 3 is > oldCost 2 of the Same Node 2.
+- As we know when a Node get popped up from the Min Heap, it means that Node reached its SMALLEST cost and now we can use this Node's cost like (2,2). Node 2 has another variation in the min heap, (3,2), but doesn't matter how many variation we get of the Node 2, those variation will always have HIGHER COST like (3,2) has cost 3 which is > oldCost 2. 
+- So instead of `if visited[startNode] == True` we can say `if curWeight > cost[startNode]`
+
+```py
+from typing import List
+from collections import deque, defaultdict
+from heapq import heapify, heappush, heappop
+
+class Solution:
+    def djikstra(self, adjList: dict[list[int]], numberOfNodes: int, sourceNode: int) -> int:
+        cost, pq = defaultdict(lambda: float('inf')), [(0, sourceNode)]
+        cost[sourceNode] = 0
+        heapify(pq)
+        numberOfVisitedNodes, maxCost = 0, float('-inf')
+
+        while len(pq) != 0:
+            curWeight, startNode = heappop(pq)
+            if curWeight > cost[startNode]: # if curCost of the Node X is >= oldCost of the same Node X HAS THE SAME MEANING
+                continue                    # if the Node X is already visited then continue
+            
+            for (adjNode, weight) in adjList[startNode]: # updating the cost of the Nodes(adjNode) connected with the startNode
+                curCost = cost[startNode] + weight
+                if curCost < cost[adjNode]: # if curCost < oldCost
+                    cost[adjNode] = curCost
+                    heappush(pq, (curCost, adjNode)) # pushing UPDATED nodes in the min heap
+            
+            numberOfVisitedNodes += 1
+            maxCost = max(maxCost, cost[startNode])
+        
+        return maxCost if numberOfVisitedNodes == numberOfNodes else -1
+    
+    def createGraph(self, inputList: list[list[int]], adjList: dict[list[int]]) -> None:
+        for (fromm, to, weight) in inputList:
+            adjList[fromm].append((to, weight))
+    
+    def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
+        adjList = defaultdict(list)
+        self.createGraph(times, adjList)
+        return self.djikstra(adjList, n, k)
+
+def main():
+    si = Solution()
+    times = [[2,1,1],[2,3,1],[3,4,1]]
+    n, k = 4, 2
+    print(si.networkDelayTime(times, n, k))
+
+if __name__ == '__main__':
+    main()
+```
+
 ```js
 Time  Complexity : O(n^2)
 Space Complexity : O(NE), N = Nodes, E = Edges.
 ```
+
+
