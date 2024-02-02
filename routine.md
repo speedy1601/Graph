@@ -5,5 +5,5 @@
 |MON  | 1205 `(EEE)` `419` | 3375 `(CE)` `312(TB)`    | 4241 `(VLSI)` `416`   | 4278 `(CGaMSD)` `413` |                         |
 
 ##                                                            Online Lab (At Night)
-| Day | 9:00 - 11:00 | Day | 8:45 - 9:45   |
+| Day | 9:00 - 11:00    | Day | 8:45 - 9:45      |
 | Wed | 2161 `(EE Lab)` | Fri | 1259 `(EEE Lab)` |
